@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 6</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #333;
+    }
+    .invoice-box {
+      max-width: 900px;
+      border: 1px ;
+      padding: 20px;
+      margin: auto;
+    }
+    .logo {
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      color: #cc0000;
+    }
+    .invoice-title {
+      float: right;
+      text-align: right;
+      font-size: 20px;
+      color: lightblue;
+      font-weight: bold;
+    }
+    
+    .company-info, .bill-to {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    .totals td {
+      border:none;
+      text-align: right;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      font-style: italic;
+      background-color: #9d9898;
+    }
+  </style>
+</head>
+<body>
+  
+    <img src="data:image/jpeg;base64,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" height="100">
+    <p class="invoice-title">job invoice</p>
+    
+    <p class="company-info">
+      <strong>Company Name</strong><br>
+      address<br>
+      city, state ZIP<br>
+      Phone, fax<br>
+      email, Website</p>
+      
+    <p style="margin-top: 20px;">
+      <strong>Date:</strong><br>
+      <strong>Invoice #:</strong>
+    </p>
+    <hr>
+
+    <div class="bill-to">
+      <strong>Bill To:</strong><br>
+      Name<br>
+      Address<br>
+      City, ST ZIP<br>
+      Country<br>
+      Phone
+    </div>
+
+    
+
+    <table>
+      
+        <tr style="background-color:rgb(213, 213, 249)">
+          <th >Start date</th>
+          <th>Finish date</th>
+          <th>Job address</th>
+          <th>Client name</th>
+        </tr>
+      
+      
+        <tr>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+          <td ></td>
+        </tr>
+      
+    </table>
+
+    <table>
+      
+        <tr style="background-color:rgb(213, 213, 249)">
+          <th>Item ID</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Line Total</th>
+        </tr>
+      
+      
+        <!-- 5 empty rows -->
+        <tr><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr  style="background-color:rgb(211, 205, 205)"><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td  ></td><td></td><td></td><td></td><td></td></tr>
+        <tr  style="background-color:rgb(211, 205, 205)"><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td  ></td><td></td><td></td><td></td><td></td></tr>
+        <tr  style="background-color:rgb(211, 205, 205)"><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr  style="background-color:rgb(211, 205, 205)"><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td  ></td><td></td><td></td><td></td><td></td></tr>
+        <tr  style="background-color:rgb(211, 205, 205)"><td ></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td  ></td><td></td><td></td><td></td><td></td></tr>
+      
+    </table>
+
+    <table class="totals">
+      <tr>
+        <td colspan="4"><strong>Subtotal:</strong></td>
+        <td style=" border:1px solid #140707;">_</td>
+      </tr>
+      <tr>
+        <td colspan="4"><strong>Extras:</strong></td>
+        <td style=" border:1px solid #210e0e;">_</td>
+      </tr>
+      <tr>
+        <td colspan="4"><strong>Total:</strong></td>
+        <td style=" border:1px solid #210e0e;"><strong>_</strong></td>
+      </tr>
+      <tr>
+        <td colspan="4"><strong>Paid:</strong></td>
+        <td style=" border:1px solid #210e0e;">_</td>
+      </tr>
+      <tr>
+        <td colspan="4"><strong>Total Due:</strong></td>
+        <td style=" border:1px solid #210e0e;"><strong>_</strong></td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      THANK YOU FOR YOUR BUSINESS!
+    </div>
+  
+</body>
+</html>
+</body>
+</html>
