@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>New Employee Details Form</title>
+    <style>
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-spacing: 10px;
+            font-family: Arial, sans-serif;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 95%;
+            padding: 5px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+        .submit-btn {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">New Employee Details Form</h2>
+
+    <form>
+        <table>
+            <!-- Personal Details -->
+            <tr><td colspan="4" class="section-title">Personal Details</td></tr>
+            <tr>
+                <td colspan="1">Your Name</td>
+                <td>
+                    <select>
+                        
+                        <option>Mr</option>
+                        <option>Ms</option>
+                        <option>Mrs</option>
+                    </select>
+                </td>
+                <td><input type="text" ></td>
+                <td><input type="text"></td>
+                <td><input type="text" ></td>
+            </tr>
+                <tr>
+                    <td></td>
+                    <td>Title</td>
+                    <td>First Name</td>
+                    <td>Middle Name</td>
+                    <td>sSurName</td>
+    
+                </tr>
+               
+                <tr>
+                    <td>Gender</td>
+                    <td >
+                        <input type="radio" name="gender"> Male</td>
+                        <td><input type="radio" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                <td>Birth Date</td>
+                <td colspan="4"><input type="date"></td>
+            </tr>
+            <tr>
+                <td rowspan="4" >Address</td>
+                <td colspan="2"><input type="text"></td>
+                <td colspan="2" ><input type="text"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">Street Address</td>
+                <td colspan="2">Street Address Line 2</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text" ></td>
+                <td><input type="text" ></td>
+            </tr>
+            <tr>
+                <td>Suburb</td>
+                <td>State</td>
+                <td>Postcode</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Postcode"></td>
+                <td><input type="text" placeholder="Home Phone"></td>
+                <td><input type="text" placeholder="Mobile Phone"></td>
+                <td><input type="email" placeholder="Email Address"></td>
+            </tr>
+            <tr>
+                <td colspan="1">Are you an Australian?</td>
+                <td >
+                    <input type="radio" name="aus"> Yes</td>
+                    <td><input type="radio" name="aus"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Do you have a working visa?</td>
+                <td colspan="1">
+                    <input type="radio" name="visa"> Yes</td>
+                    <td><input type="radio" name="visa"> No
+                </td>
+            </tr>
+
+
+            <!-- Employment Details -->
+            <tr><td colspan="4" class="section-title">Employment Details</td></tr>
+            <tr>
+                <td>Job Title</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Commencement Date</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>File Tax Number</td>
+                <td><input type="text"></td></tr>
+            <tr></tr>
+                <td>Employment Status</td>
+                <td>
+                    <input type="radio" name="status"> Full Time
+                    <input type="radio" name="status"> Part Time
+                    <input type="radio" name="status"> Temporary
+                    <input type="radio" name="status"> Casual
+                </td>
+            </tr>
+
+            <!-- Emergency Contact -->
+            <tr><td colspan="4" class="section-title">Emergency Contact Details</td></tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <select>
+                        <option>Title</option>
+                        <option>Mr</option>
+                        <option>Ms</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="First Name"></td>
+                <td><input type="text" placeholder="Middle Name"></td>
+                <td><input type="text" placeholder="Surname"></td>
+            </tr>
+            <tr>
+                <td>Relationship</td>
+                <td colspan="4"><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td><input type="text" placeholder="Home Phone"></td>
+                <td><input type="text" placeholder="Mobile Phone"></td>
+                <td colspan="2"><input type="email" placeholder="Email Address"></td>
+            </tr>
+
+            <!-- Banking -->
+            <tr><td colspan="4" class="section-title">Banking Details</td></tr>
+            <tr>
+                <td rowspan="2">Bank</td>
+                <td>Bank Name</td>
+                <td>Bank Branch</td>
+                
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Bank Name"></td>
+                <td><input type="text" placeholder="Bank Branch"></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Account</td>
+                <td>Account Name</td>
+                <td>Account Number</td>
+                <td>BSB Number</td>
+            </tr>
+            <tr>
+                
+                
+                <td><input type="text" placeholder="Account Name"></td>
+                <td><input type="text" placeholder="Account Number"></td>
+                <td><input type="text" placeholder="BSB Number"></td>
+            </tr>
+            <tr>
+                <td>Employee Signature</td>
+                <td colspan="4">
+                    <textarea name="comments" rows="6" cols="65"></textarea>
+                    <input type="text" placeholder="Print your name here">
+                    <br><br>
+                    <input type="date" placeholder="Enter date here">
+                </td>
+            </tr>
+            <tr>
+                <td align="left" colspan="5" class="submit-btn">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+</body>
+</html>
